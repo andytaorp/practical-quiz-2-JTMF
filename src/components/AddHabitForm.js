@@ -21,7 +21,7 @@ export default function AddHabitForm({ handleAddHabit }) {
           onChange={(e) => setHabitName(e.target.value)}
           placeholder="New Habit"
         />
-        <button>Submit</button>
+        <button>Add Habit</button>
       </form>
     </div>
   )
