@@ -19,6 +19,7 @@ export default function AddHabitForm({ handleAddHabit }) {
           type="text"
           value={habitName}
           onChange={(e) => setHabitName(e.target.value)}
+          placeholder="New Habit"
         />
         <button>Submit</button>
       </form>
