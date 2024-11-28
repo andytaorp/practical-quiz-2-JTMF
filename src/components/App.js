@@ -7,12 +7,14 @@ function App() {
 
   const handleAddHabit = (habitName) => {
     // TODO: write code to add a new habit here
-    const newHabit = {  
-      id: Date.now(),
-      habit: habitName,
-      completed: false, 
-    };
-    setHabits([...habits, newHabit]);
+    if (!habitName.trim()) {
+      const newHabit = {  
+        id: Date.now(),
+        habit: habitName,
+        completed: false, 
+      };
+      setHabits([...habits, newHabit]);
+    }
   };
 
   const handleToggleHabit = (id) => {
