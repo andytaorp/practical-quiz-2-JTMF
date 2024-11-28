@@ -14,7 +14,7 @@ export default function AddHabitForm({ handleAddHabit }) {
     //TODO: add a form to add a new habit
     <div>
       <form onSubmit={handleSubmit}>
-        <label for="habit">Habit: </label>
+        <label>Habit: </label>
         <input
           type="text"
           value={habitName}

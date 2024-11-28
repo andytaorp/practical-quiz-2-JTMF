@@ -24,7 +24,7 @@ function App() {
 
   const handleDeleteHabit = (id) => {
     // TODO: write code to delete a habit
-    setHabits((prevItems) => prevItems.filter(habits => habits.id !== id));
+    setHabits((prevItems) => prevItems.filter(habit => habit.id !== id));
   };
 
   return (
