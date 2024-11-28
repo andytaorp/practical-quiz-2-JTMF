@@ -7,7 +7,7 @@ function App() {
 
   const handleAddHabit = (habitName) => {
     // TODO: write code to add a new habit here
-    if (!habitName.trim()) {
+    if (habitName.trim()) {
       const newHabit = {  
         id: Date.now(),
         habit: habitName,
